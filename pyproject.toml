@@ -1,0 +1,32 @@
+[project]
+name = "vlabench"
+version = "0.1.0"
+description = "VLABench"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama>=0.4.6",
+    "colorlog>=6.10.1",
+    "dm-control==1.0.22",
+    "ffmpeg>=1.4",
+    "gdown>=5.2.0",
+    "gym==0.26.2",
+    "gymnasium==0.29.1",
+    "h5py==3.11.0",
+    "mediapy==1.2.0",
+    "mujoco==3.2.2",
+    "mujoco-mjx==3.2.2",
+    "notebook>=7.4.7",
+    "numpy==1.25",
+    "open3d==0.18.0",
+    "openai>=2.6.0",
+    "opencv-python>=4.8.1.78",
+    "peft>=0.17.1",
+    "pynput>=1.8.1",
+    "rrt-algorithms",
+    "scipy==1.14.0",
+    "tensorflow-datasets==4.9.2",
+]
+
+[tool.uv.sources]
+rrt-algorithms = { path = "../rrt-algorithms", editable = true }
